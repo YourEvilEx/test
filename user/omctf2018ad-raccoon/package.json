@@ -1,0 +1,28 @@
+{
+  "name": "omctf2018ad-space-racoon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "server": "pm2 start index.js --no-daemon --name racoon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com:omctf-devs/omctf2018ad/omctf2018ad-space-racoon.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/Medlot/scb#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "4.16.3",
+    "express-hbs": "1.0.4",
+    "ws": "^5.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "1.17.3",
+    "pm2": "2.10.2"
+  }
+}

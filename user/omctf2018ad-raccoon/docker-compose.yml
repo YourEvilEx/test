@@ -1,0 +1,14 @@
+version: '3'
+services:
+  raccoon:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    image: omctf2018ad/raccoon
+    ports:
+      - "6666:6666"
+
+networks:
+  default:
+    external:
+      name: omctf2018ad_net
